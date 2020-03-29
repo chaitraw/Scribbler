@@ -1,0 +1,12 @@
+#main-header {
+    color: blue;
+    font-family: 'Montez', cursive;
+}
+#sub-header {
+    font-family: 'Ubuntu Mono';
+}
+.signingDetails {
+    float: right;
+}
+
+

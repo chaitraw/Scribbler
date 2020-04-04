@@ -19,6 +19,7 @@
         <link rel="stylesheet" type="text/css" media="screen" href="./styles/common.css" /> 
         <link rel="stylesheet" type="text/css" media="screen" href="./styles/index.css" /> 
         
+        <script src="./scripts/index.js"></script>
     </head>
 
     <body id="mainBody">
@@ -26,19 +27,58 @@
         <header>
             <div class="page-header">
                 <div class="signingButtons">
-                    <button class="btn btn-primary" type="signUp">Sign Up</button>
-                    <button class="btn btn-primary" type="signIn">Sign In</button>
+                    <button id="signup" class="btn btn-primary" type="signUp" onclick="displaySignup()">Sign Up</button>
+                    <button id="signin" class="btn btn-primary" type="signIn">Sign In</button>
                 </div>
             
                 <h2 id="main-header">ScriBBler</h2>
                 <h6 id="sub-header">Explore, Imagine, Create</h6>
             </div>
-            
         </header>
+
+        <!-- All posts & Create posts div-->
         <div class="postButtons">
             <button class="btn btn-default" type="button">All Posts</button>
             <button class="btn btn-default" type="button">Create Post</button>
         </div>
-    </body>
 
+        <!---->
+        <div id="signUpModal" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Get Started</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeSignup()">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="form-group"> 
+                            <label for="inputName">Name</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group"> 
+                            <label for="inputUserName">Username</label>
+                            <input type="text" class="form-control" id="inputUserName" placeholder="Enter your username">
+                        </div>
+                        <div class="form-group"> 
+                            <label for="inputPassword">Password</label>
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Enter your password">
+                        </div>
+                        <div class="form-group"> 
+                            <label for="inputConfirmPassword">Confirm Password</label>
+                            <input type="password" class="form-control" id="inputConfirmPassword" placeholder="Re-enter your password">
+                        </div>
+
+                        <button id="signin" class="btn btn-primary btn-block" type="signIn">Sign Up</button>
+                    </div>
+
+                </div>
+            </div>
+          </div>
+         
+    </body>
+    
 </html>

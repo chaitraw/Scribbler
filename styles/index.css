@@ -17,4 +17,10 @@ body, html {
 .btn.btn-default {
     background-color: yellow;
 }
+#signupbtn, #signinbtn{
+    background-color: green;
+}
+#signUpModal, #signInModal {
+    padding-top: 100px;
+}
 

@@ -38,8 +38,8 @@
 
         <!-- All posts & Create posts div-->
         <div class="postButtons">
-            <button class="btn btn-default" type="button">All Posts</button>
-            <button class="btn btn-default" type="button">Create Post</button>
+            <button class="btn btn-default" type="button" onclick="window.location='./html/bloglist.html'">All Posts</button>
+            <button class="btn btn-default" type="button" onclick="displayCreatePost()">Create Post</button>
         </div>
 
         <!--Sign up modal-->
@@ -112,6 +112,39 @@
                             <div class="d-flex justify-content-center links">
                                 Not a member?&nbsp;<a href="#" onclick="displaySignup()">Sign Up</a>
                             </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <!--Create Post modal-->
+        <form>
+            <div id="createPostModal" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-xl"  role="document">
+                
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Pen Your Post</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeCreatePost()">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="form-group"> 
+                                <label for="inputUserName">Title</label>
+                                <input type="text" class="form-control" id="inputUserName" placeholder="Enter title of your post" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputContent">Contents</label>
+                                <textarea class="form-control" id="inputContent" rows="10" placeholder="Enter the contents of your post" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button id="createPost" class="btn btn-primary justify-content-center" type="create">Create</button>
+                            </div>
+
                         </div>
 
                     </div>

@@ -17,10 +17,10 @@ body, html {
 .btn.btn-default {
     background-color: yellow;
 }
-#signupbtn, #signinbtn{
+#signupbtn, #signinbtn, #createPost {
     background-color: green;
 }
-#signUpModal, #signInModal {
+#signUpModal, #signInModal, #createPostModal {
     padding-top: 100px;
 }
 

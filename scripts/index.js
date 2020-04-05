@@ -14,3 +14,11 @@ function displaySignIn() {
 function closeSignIn() {
     document.getElementById("signInModal").style.display = 'none';
 }
+
+function displayCreatePost() {
+    document.getElementById("createPostModal").style.display = 'block';
+}
+
+function closeCreatePost() {
+    document.getElementById("createPostModal").style.display = 'none';
+}

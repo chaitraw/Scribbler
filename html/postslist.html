@@ -157,7 +157,7 @@
                 </div>
 
                 <!-- Font Awesome icon for horizontal ellipsis icon -->
-                <span class="ellipsis" onclick="openPost(authorName1, headingName1, content1)">
+                <span class="ellipsis" onclick="displayPost(authorName1, headingName1, content1)">
                     <i style="font-size:24px" class="fa">&#xf141;</i>
                 </span>
 
@@ -167,18 +167,18 @@
             <div id="modalConfirm1" class="modal fade">
                 <div id="confirmDialog" class="modal-dialog">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 id="decisionMsg" class="modal-title">
-                                Are you sure you want to delete this post?</h4>
-                        </div>
-
-                        <div class="modal-footer">
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <h4 id="decisionMsg" class="modal-title">
+                                    Are you sure you want to delete this post?</h4>
+                            </div>
+                        
                             <button id="btnYes" type="button" class="btn btn-success"
                                  data-dismiss="modal"
-                                onclick="removeCard('post1')">Yes</button>
+                                onclick="deleteCard('post1')">Yes</button>
                             <button id="btnNo" type="button" class="btn btn-danger"
                                 data-dismiss="modal">No</button>
-                        </div>
+                        </div>                        
                     </div>
                 </div>
             </div>
@@ -209,7 +209,7 @@
 
 
                 <!-- Font Awesome icon for horizontal ellipsis icon -->
-                <span class="ellipsis" onclick="openPost(authorName2,headingName2,content2)">
+                <span class="ellipsis" onclick="displayPost(authorName2,headingName2,content2)">
                     <i style="font-size:24px" class="fa">&#xf141;</i>
                 </span>
 
@@ -218,16 +218,15 @@
             <div id="modalConfirm2" class="modal fade">
                 <div id="confirmDialog" class="modal-dialog ">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 id="decisionMsg" class="modal-title">
-                                Are you sure you want to delete this post?
-                            </h4>
-                        </div>
-
-                        <div class="modal-footer">
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <h4 id="decisionMsg" class="modal-title">
+                                    Are you sure you want to delete this post?</h4>
+                            </div>
+                        
                             <button id="btnYes" type="button" class="btn btn-success"
                                  data-dismiss="modal"
-                                onclick="removeCard('post2')">Yes</button>
+                                onclick="deleteCard('post2')">Yes</button>
                             <button id="btnNo" type="button" class="btn btn-danger"
                                 data-dismiss="modal">No</button>
                         </div>
@@ -262,7 +261,7 @@
                     We all want to become stars, or at the very least, a recognizable name in the industry.</div>
 
                 <!-- Font Awesome icon for horizontal ellipsis icon -->
-                <span class="ellipsis" onclick="openPost(authorName3,headingName3,content3)">
+                <span class="ellipsis" onclick="displayPost(authorName3,headingName3,content3)">
                     <i style="font-size:24px" class="fa">&#xf141;</i>
                 </span>
 
@@ -271,16 +270,15 @@
             <div id="modalConfirm3" class="modal fade">
                 <div id="confirmDialog" class="modal-dialog ">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 id="decisionMsg" class="modal-title">
-                                Are you sure you want to delete this post?
-                            </h4>
-                        </div>
-
-                        <div class="modal-footer">
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <h4 id="decisionMsg" class="modal-title">
+                                    Are you sure you want to delete this post?</h4>
+                            </div>
+                        
                             <button id="btnYes" type="button" class="btn btn-success"
                                  data-dismiss="modal"
-                                onclick="removeCard('post3')">Yes</button>
+                                onclick="deleteCard('post3')">Yes</button>
                             <button id="btnNo" type="button" class="btn btn-danger"
                                 data-dismiss="modal">No</button>
                         </div>
@@ -316,7 +314,7 @@
                     leads to confusion when discussing the code.</div>
 
                 <!--  Font Awesome icon for horizontal ellipsis icon -->
-                <div class="ellipsis" onclick="openPost(authorName4,headingName4,content4)">
+                <div class="ellipsis" onclick="displayPost(authorName4,headingName4,content4)">
                     <i style="font-size:24px" class="fa">&#xf141;</i>
                 </div>
 
@@ -325,15 +323,15 @@
             <div id="modalConfirm4" class="modal fade">
                 <div id="confirmDialog" class="modal-dialog ">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 id="decisionMsg" class="modal-title">
-                                Are you sure you want to delete this post?</h4>
-                        </div>
-
-                        <div class="modal-footer">
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <h4 id="decisionMsg" class="modal-title">
+                                    Are you sure you want to delete this post?</h4>
+                            </div>
+                        
                             <button id="btnYes" type="button" class="btn btn-success"
                                  data-dismiss="modal"
-                                onclick="removeCard('post4')">Yes</button>
+                                onclick="deleteCard('post4')">Yes</button>
                             <button id="btnNo" type="button" class="btn btn-danger"
                                 data-dismiss="modal">No</button>
                         </div>
@@ -369,7 +367,7 @@
                     named xyz.</div>
 
                 <!--  Font Awesome icon for horizontal ellipsis -->
-                <span class="ellipsis" onclick="openPost(authorName5,headingName5,content5)">
+                <span class="ellipsis" onclick="displayPost(authorName5,headingName5,content5)">
                     <i style="font-size:24px" class="fa">&#xf141;</i>
                 </span>
 
@@ -378,15 +376,15 @@
             <div id="modalConfirm5" class="modal fade">
                 <div id="confirmDialog" class="modal-dialog ">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 id="decisionMsg" class="modal-title">
-                                Are you sure you want to delete this post?</h4>
-                        </div>
-
-                        <div class="modal-footer">
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <h4 id="decisionMsg" class="modal-title">
+                                    Are you sure you want to delete this post?</h4>
+                            </div>
+                        
                             <button id="btnYes" type="button" class="btn btn-success"
                                  data-dismiss="modal"
-                                onclick="removeCard('post5')">Yes</button>
+                                onclick="deleteCard('post5')">Yes</button>
                             <button id="btnNo" type="button" class="btn btn-danger"
                                 data-dismiss="modal">No</button>
                         </div>

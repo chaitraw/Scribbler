@@ -8,5 +8,11 @@
 .signingButtons {
     float: right;
 }
+#signupbtn, #signinbtn {
+    background-color: green;
+}
+#signUpModal, #signInModal {
+    padding-top: 100px;
+}
 
 
